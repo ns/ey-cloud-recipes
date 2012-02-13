@@ -4,6 +4,8 @@
 #  }
 #end
 
+require_recipe "rapns"
+
 # uncomment to turn on thinking sphinx/ultra sphinx. Remember to edit cookbooks/sphinx/recipes/default.rb first!
 # require_recipe "sphinx"
 
@@ -46,7 +48,8 @@
 
 #uncomment to include the emacs recipe
 #require_recipe "emacs"
-require_recipe "varnish_frontend"
+# require_recipe "varnish_frontend"
+
 #uncomment to include the eybackup_verbose recipe
 #require_recipe "eybackup_verbose"
 
