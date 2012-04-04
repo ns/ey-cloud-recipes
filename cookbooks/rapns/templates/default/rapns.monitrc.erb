@@ -1,5 +1,5 @@
 check process rapns
   with pidfile /data/<%= @app_name %>/shared/pids/rapns.pid
-  start program = "/bin/bash -c 'cd /data/<%= @app_name %>/current && bundle exec rapns <%= @env %>'" as uid <%= @user %> and gid <%= @user %> with timeout 90 seconds
-  stop program = "/bin/bash -c 'kill -INT `cat /data/<%= @app_name %>/shared/pids/rapns.pid`'" as uid <%= @user %> and gid <%= @user %> with timeout 90 seconds
+  start program = "/bin/bash -c 'cd /data/<%= @app_name %>/current && bundle exec rapns <%= @env %>'" as uid <%= @user %> and gid <%= @user %> with timeout 180 seconds
+  stop program = "/bin/bash -c 'kill -INT `cat /data/<%= @app_name %>/shared/pids/rapns.pid`'" as uid <%= @user %> and gid <%= @user %> with timeout 180 seconds
   group rapns
